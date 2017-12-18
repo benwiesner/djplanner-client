@@ -1,0 +1,31 @@
+<div class="container">
+    <h1>Edit Client</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <form (ngSubmit)="updateClient(client._id)" #clientEditForm="ngForm">
+          <div class ="form-group">
+            <label for="_id">ID</label>
+            <input type="text" class="form-control" [(ngModel)]="client._id" name="id" disabled>
+          </div>
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" [(ngModel)]="client.firstName" name="firstName" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" [(ngModel)]="client.lastName" name="lastName" required>
+          </div>
+          <div class="form-group">
+            <label for="telephone">Telephone</label>
+            <input type="text" class="form-control" [(ngModel)]="client.telephone" name="telephone" required>
+          </div>
+         
+          <div class="form-group">
+            <button type="submit" class="btn btn-success" [disabled]="!clientEditForm.form.valid">Save</button>
+            <button type="delete" (click)="deleteClient(client._id)" class="btn btn-danger">Delete</button>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+  </div>
