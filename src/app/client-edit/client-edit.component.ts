@@ -24,7 +24,7 @@ export class ClientEditComponent implements OnInit {
   }
 
   updateClient(id, data){
-    this.http.put('http://localhost:8080/api/clients/'+id, data)
+    this.http.post('http://localhost:8080/api/clients/'+id, this.client)
     .subscribe(res =>
       {
         let id = res['id'];
