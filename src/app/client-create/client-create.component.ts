@@ -10,6 +10,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./client-create.component.css'],
   //encapsulation: ViewEncapsulation.None
 })
+
 export class ClientCreateComponent implements OnInit {
 
   client = {};
@@ -27,5 +28,10 @@ export class ClientCreateComponent implements OnInit {
       console.log(err);
     }
   );
-}
+ }
+
+ cancelClient() {
+   this.router.navigate(['/clients']);
+ }
+
 }
