@@ -30,7 +30,8 @@ export class ClientCreateComponent implements OnInit {
   );
  }
 
- cancelClient() {
+ cancel() {
+   console.log("Cancel Button Pressed!");
    this.router.navigate(['/clients']);
  }
 
