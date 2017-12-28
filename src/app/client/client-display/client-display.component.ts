@@ -3,10 +3,10 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-client',
-  templateUrl: './client.component.html',
-  styleUrls: ['./client.component.css']
+  templateUrl: './client-display.component.html',
+  styleUrls: ['./client-display.component.css']
 })
-export class ClientComponent implements OnInit {
+export class ClientDisplayComponent implements OnInit {
 
   constructor(private http: HttpClient) { }
 

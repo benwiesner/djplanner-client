@@ -1,19 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 
 
 import { AppComponent } from './app.component';
-import { ClientComponent } from './client/client.component';
-import { ClientCreateComponent } from './client-create/client-create.component';
-import { ClientEditComponent } from './client-edit/client-edit.component';
+import { ClientDisplayComponent } from './client/client-display/client-display.component';
+import { ClientCreateComponent } from './client/client-create/client-create.component';
+import { ClientEditComponent } from './client/client-edit/client-edit.component';
 
+
+//TO-DO Reorganize
 const appRoutes: Routes = [
+  
   {
     path: 'clients',
-    component: ClientComponent,
+    component: ClientDisplayComponent,
     data: {title: 'Client List'}
   },
   {
@@ -33,11 +36,10 @@ const appRoutes: Routes = [
   }
 ]
 
-
 @NgModule({
   declarations: [
     AppComponent,
-    ClientComponent,
+    ClientDisplayComponent,
     ClientCreateComponent,
     ClientEditComponent
   ],
@@ -45,7 +47,8 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     HttpClientModule,
-    RouterModule.forRoot(appRoutes, {enableTracing: true})
+    RouterModule.forRoot(appRoutes, {enableTracing: true}),
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
