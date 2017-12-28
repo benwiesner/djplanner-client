@@ -4,8 +4,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-client-edit',
-  templateUrl: './client-edit.component.html',
-  styleUrls: ['./client-edit.component.css']
+  templateUrl: './client-edit.component.html'
 })
 export class ClientEditComponent implements OnInit {
 

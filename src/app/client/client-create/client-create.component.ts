@@ -6,8 +6,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-client-create',
-  templateUrl: './client-create.component.html',
-  styleUrls: ['./client-create.component.css'],
+  templateUrl: './client-create.component.html'
   //encapsulation: ViewEncapsulation.None
 })
 
