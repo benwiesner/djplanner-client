@@ -17,3 +17,4 @@ export const navigationRoute = [
         data: {title: 'Nav Bar'}
     }
 ]
+
