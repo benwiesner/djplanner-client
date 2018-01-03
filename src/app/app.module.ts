@@ -15,7 +15,8 @@ import { AppComponent } from './app.component';
 import { ClientDisplayComponent } from './client/client-display/client-display.component';
 import { ClientCreateComponent } from './client/client-create/client-create.component';
 import { ClientEditComponent } from './client/client-edit/client-edit.component';
-import { NavigationBarComponent } from './navigation-bar/navigation-bar.component'
+import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
+import { HomeComponent } from './home/home.component'
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { NavigationBarComponent } from './navigation-bar/navigation-bar.componen
     ClientDisplayComponent,
     ClientCreateComponent,
     ClientEditComponent,
-    NavigationBarComponent
+    NavigationBarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
